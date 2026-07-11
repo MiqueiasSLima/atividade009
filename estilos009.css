@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Sans Serif';
+    line-height: 1.6;
+}
+li{
+    margin-left: 10vh;
+}
+main{
+    width: 90%;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    background-color: rgb(48, 28, 134);
+    border-radius: 0.5rem;
+}
+button{
+    font-size: 2vh;
+    text-align: center;
+    margin: 1vh;
+    padding: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+header{
+    padding: 5vh;
+    text-align: left;
+    background-image: linear-gradient(to right, rgba(14, 207, 182, 0.76) , rgba(190, 11, 71, 0.733));
+}
+
+footer{
+    display: flex;
+    background-image: linear-gradient(to right, rgba(14, 207, 182, 0.76) , rgba(190, 11, 71, 0.733));
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    height: 10%; 
+    font-size: 2vh;
+}
+
+button{
+    background-color: aliceblue;
+    font-size: larger;
+    padding: 1vw 2vw;
+}
+button:hover{
+    background-color: #055e31ab;
+    color:rgb(255, 255, 255);
+}
+
+img{
+    width: 20%;
+    height: 20%;
+}
+
+.container{
+    display: flex;         
+    align-items: center;   
+    gap: 2%; 
+}
+
+.container2{
+    display: grid;         
+    justify-content: left;  
+}
+
+.item{
+    flex: 1;
+    margin: 1%;
+    padding: 1%;
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+.menu{
+    display: none;
+}
+
+span#burguer{
+    visibility: hidden;
+    font-size: 8vh;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1vh;
+    margin: 1vh;
+    cursor: pointer;
+}
+
+span#burguer:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    body{
+        background-color: #8cccac;
+    }
+
+    h1{
+        font-size: 1rem;
+        color: #d6562f;
+    }
+
+    main{
+        width: 95%;
+        padding: 0.625rem;
+    }
+
+    img{
+        width: 35%;
+        height: 35%;
+    }
+
+    span#burguer{
+        visibility: visible;
+        font-size: 8vh;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 1vh;
+        margin: 1vh;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+        text-align: left;
+        padding-left: 60%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body{
+        background-color: #83baca;
+    }
+
+    h1{
+        color: #0f1faf;
+        font-size: 1.5;
+    }
+
+    main{
+        width: 80%;
+    }
+
+    img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+@media (min-width: 901px) {
+    body{
+        background-color: #af91e0;
+    }
+
+    h1{
+        color: #d411aa;
+        font-size: 1.75;
+    }
+
+    main{
+        width: 80%;
+        max-width: 82.5rem;
+    }
+
+    .menu{
+        display: none;
+    }
+}

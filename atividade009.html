@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos009.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="./imagens/logo-criativa.png">
+                <h1>Agência Criativa Web</h1>
+                <span id="burguer" class="material-icons" onclick="abrir()">menu</span>
+            </div>
+            <nav id="navMenu" class="menu">
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container2">
+            <section class="item">
+                <h2>Home</h2>
+                <p>Bem-vindo! Este é o site da Agência Criativa Web!</p>
+                <p>Oferecemos os melhores serviços criativos para sua marca!</p>
+            </section>
+
+            <section class="item">
+                <h2>Sobre nós</h2>
+                <p>Nossa história começa em 2010, quando os nossos socios fundadores Bruno Larpe e Caio Capper 
+                    decidiram trazer um novo rumo mercado, criando uma empresa com um foco grande na criatividade artistica!
+                    Oferecendo diversos serviços para outras empresas que precisam de logos, sites e entre outras necessidades criativas.
+                </p>
+            </section>
+
+            <section class="item">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Criação de sites</li>
+                    <li>Design Gráfico</li>
+                    <li>Consultoria em SEO</li>
+                    <li>Marketing Digital</li>
+                    <li>Criação e edição de vídeos</li>
+                </ul>
+            </section>
+
+            <section class="item">
+                <h2>Depoimentos</h2>
+                <h3>Ana Castela</h3>
+                <p>"Trabalho com a Agência Criativa Web desde o começo da minha empresa, eles fazem parte da história da minha marca e não tenho previsão de mudar isto!"</p>
+                <br>
+                <h3>Marcio Costela</h3>
+                <p>"Eu sempre olhava outras marcas e via que elas tinha algo que eu não conseguia atingir, até entender que era necessário ter um parceiro que tivesse a visão criativa e profissional para me ajudar, a Agência Critiva Web foi capaz de colocar minha marca como notoria no mercado!"</p>
+                <br>
+                <h3>Carlos Plato</h3>
+                <p>"A Agência Criativa Web oferece os serviços para minha marca que nenhuma outra consegue fazer igual!"</p>
+
+            </section>
+
+            <section class="item">
+                <h2>Contato</h2>
+                <h3>Entre em contato conosco e nos conte o que sua marca precisa que iremos lhe atender!</h3>
+
+                <form>
+                    <label for="nome">Nome</label>
+                    <br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    <br>
+                    <br>
+                    <label for="numero">Número de celular</label>
+                    <br>
+                    <input type="number" id="numero" name="numero" placeholder="Digite seu número" required>
+                    <br>
+                    <br>
+                    <label for="mensagem">Conte-nos sobre o que você precisa</label>
+                    <br>
+                    <textarea></textarea>
+                    <br>
+                    <br>
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </main>
+    
+        <footer>
+            &copf; 2026 Agência Criativa Web - Todos os direitos reservados.
+        </footer>
+        <script>
+            function abrir(){
+                if(navMenu.style.display == 'block'){
+                    navMenu.style.display = 'none'
+                }else{
+                    navMenu.style.display = 'block'
+                }
+            }
+        </script>
+    </body>
+</html>
