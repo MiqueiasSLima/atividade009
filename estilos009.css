@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', 'Sans Serif';
-    line-height: 1.6;
+    line-height: 1.6rem;
 }
 
 .header{
@@ -67,15 +67,26 @@ img{
     text-align: left;
 }
 
+.main__item-ul{
+    padding-left: 5%;
+}
+
 .menu{
     display: none;
 }
 
-.menu__item{
-    margin-left: 10vh;
+.menu__group{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-span#burguer{
+.menu__item{
+    margin-left: 1vh;
+}
+
+.burguer{
     visibility: hidden;
     font-size: 8vh;
     color: white;
@@ -86,7 +97,7 @@ span#burguer{
     cursor: pointer;
 }
 
-span#burguer:hover{
+.burguer:hover{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
@@ -111,7 +122,7 @@ span#burguer:hover{
         height: 35%;
     }
 
-    span#burguer{
+    .burguer{
         visibility: visible;
         font-size: 8vh;
         color: white;
@@ -125,7 +136,12 @@ span#burguer:hover{
     .menu{
         display: none;
         text-align: left;
-        padding-left: 60%;
+        padding-left: 10%;
+    }
+
+    .main__item{
+        background-color: #bfc79d;
+        color: #04743c;
     }
 }
 
@@ -136,11 +152,16 @@ span#burguer:hover{
 
     .header__item{
         color: #0f1faf;
-        font-size: 1.5;
+        font-size: 1.5rem;
     }
 
     .main{
         width: 80%;
+    }
+
+    .main__item{
+        background-color: #090f5f;
+        color: #c51390;
     }
 
     img{
@@ -148,9 +169,6 @@ span#burguer:hover{
         height: 40%;
     }
 
-    .menu{
-        display: none;
-    }
 }
 
 @media (min-width: 901px) {
@@ -160,7 +178,7 @@ span#burguer:hover{
 
     .header__item{
         color: #d411aa;
-        font-size: 1.75;
+        font-size: 1.75rem;
     }
 
     .main{
@@ -168,7 +186,8 @@ span#burguer:hover{
         max-width: 82.5rem;
     }
 
-    .menu{
-        display: none;
+    .main__item{
+        background-color: #1eb33e;
+        color: #11288d;
     }
 }
