@@ -10,21 +10,23 @@
     padding: 5vh;
     text-align: left;
     background-image: linear-gradient(to right, rgba(14, 207, 182, 0.76) , rgba(190, 11, 71, 0.733));
-    display: flex;         
+    display: flex;       
     align-items: center;   
-    gap: 2%; 
+    gap: 1%; 
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer{
-    display: flex;
     background-image: linear-gradient(to right, rgba(14, 207, 182, 0.76) , rgba(190, 11, 71, 0.733));
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 1;
-    width: 100%;
-    height: 10%; 
-    font-size: 2vh;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    padding: 1vh;
 }
 
 .botao-forms{
@@ -44,15 +46,15 @@
     color:rgb(255, 255, 255);
 }
 
-img{
+.header__imagem{
     width: 20%;
     height: 20%;
 }
     
 .main{
+    flex: 1;
     display: grid;         
     justify-content: left;  
-    width: 90%;
     margin: 1.25rem auto;
     padding: 1.25rem;
     background-color: rgb(48, 28, 134);
@@ -68,38 +70,41 @@ img{
 }
 
 .main__item-ul{
-    padding-left: 5%;
+    list-style: decimal;
+    padding: 3vh;
 }
 
 .menu{
     display: none;
+    text-align: left;
+    margin-left: auto;
 }
 
 .menu__group{
-    display: flex;
+    display: block;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    text-align: left;
+    position: relative; 
+    right: 0;
+    top: 5vh;       
+    cursor: pointer;
 }
 
 .menu__item{
     margin-left: 1vh;
 }
 
-.burguer{
-    visibility: hidden;
+.material-icons.header__burguer{
     font-size: 8vh;
     color: white;
-    display: block;
-    text-align: center;
-    padding: 1vh;
-    margin: 1vh;
+    position: absolute; 
+    top: 2vh;        
+    right: 2vh;     
     cursor: pointer;
 }
 
-.burguer:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+.header__burguer:hover{
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 600px) {
@@ -117,31 +122,18 @@ img{
         padding: 0.625rem;
     }
 
-    img{
+    .header__imagem{
         width: 35%;
         height: 35%;
-    }
-
-    .burguer{
-        visibility: visible;
-        font-size: 8vh;
-        color: white;
-        display: block;
-        text-align: center;
-        padding: 1vh;
-        margin: 1vh;
-        cursor: pointer;
-    }
-
-    .menu{
-        display: none;
-        text-align: left;
-        padding-left: 10%;
     }
 
     .main__item{
         background-color: #bfc79d;
         color: #04743c;
+    }
+
+    .menu{
+        padding-left: 2%;
     }
 }
 
@@ -164,9 +156,13 @@ img{
         color: #c51390;
     }
 
-    img{
+    .header__imagem{
         width: 40%;
         height: 40%;
+    }
+
+    .menu{
+        padding-left: 10%;
     }
 
 }
@@ -182,7 +178,7 @@ img{
     }
 
     .main{
-        width: 80%;
+        width: 70%;
         max-width: 82.5rem;
     }
 
@@ -190,4 +186,9 @@ img{
         background-color: #1eb33e;
         color: #11288d;
     }
+
+    .menu{
+        padding-left: 30%;
+    }
+
 }
