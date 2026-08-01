@@ -1,0 +1,23 @@
+@use 'variaveis';
+
+@mixin reset-css{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: variaveis.$font-principal;
+    line-height: variaveis.$espacamento;
+}
+
+@mixin gradiant-padrao{
+    background-image: linear-gradient(to right, rgba(14, 207, 182, 0.76) , rgba(190, 11, 71, 0.733));
+}
+
+@mixin botao-padrao{
+    font-size: 8vh;
+    color: variaveis.$cor-padrao;
+    position: absolute; 
+    top: 2vh;        
+    right: 2vh;     
+    cursor: pointer;
+}
+

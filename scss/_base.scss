@@ -1,0 +1,97 @@
+@use 'variaveis';
+@use 'mixins';
+
+*{
+    @include mixins.reset-css;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .body{
+        background-color: #8cccac;
+    }
+
+    .header__item{
+        font-size: 1rem;
+        color: #d6562f;
+    }
+
+    .main{
+        width: 95%;
+        padding: 0.625rem;
+    }
+
+    .header__imagem{
+        width: 35%;
+        height: 35%;
+    }
+
+    .main__item{
+        background-color: #bfc79d;
+        color: #04743c;
+    }
+
+    .menu{
+        padding-left: 2%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .body{
+        background-color: #83baca;
+    }
+
+    .header__item{
+        color: #0f1faf;
+        font-size: 1.5rem;
+    }
+
+    .main{
+        width: 80%;
+    }
+
+    .main__item{
+        background-color: #090f5f;
+        color: #c51390;
+    }
+
+    .header__imagem{
+        width: 40%;
+        height: 40%;
+    }
+
+    .menu{
+        padding-left: 10%;
+    }
+
+}
+
+@media (min-width: 901px) {
+    .body{
+        background-color: #af91e0;
+    }
+
+    .header__item{
+        color: #d411aa;
+        font-size: 1.75rem;
+    }
+
+    .main{
+        width: 70%;
+        max-width: 82.5rem;
+    }
+
+    .main__item{
+        background-color: #1eb33e;
+        color: #11288d;
+    }
+
+    .menu{
+        padding-left: 30%;
+    }
+
+}

@@ -1,0 +1,49 @@
+@use 'variaveis';
+@use 'mixins';
+
+.menu{
+    display: none;
+    text-align: left;
+    margin-left: auto;
+
+    &__group{
+        display: block;
+        list-style: none;
+        text-align: left;
+        position: relative; 
+        right: 0;
+        top: 5vh;       
+        cursor: pointer;
+    }
+
+    &__item{
+        margin-left: 1vh;
+    }
+}
+
+.material-icons.header__burguer{
+    @include mixins.botao-padrao;
+    
+}
+
+.header__burguer:hover{
+    color: variaveis.$cor-padrao-hover;
+}
+
+.botao-forms{
+    background-color: #312c01ab;
+    color: variaveis.$cor-padrao;
+    font-style: bold;
+    font-size: larger;
+    padding: 1vw 2vw;
+    font-size: 2vh;
+    text-align: center;
+    margin: 1vh;
+    padding: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.botao-forms:hover{
+    background-color: #02331cab;
+}

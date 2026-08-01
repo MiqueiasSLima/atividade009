@@ -1,0 +1,48 @@
+@use 'variaveis';
+@use 'mixins';
+
+.header{
+    @include mixins.gradiant-padrao;
+    padding: 5vh;
+    text-align: left;
+    display: flex;       
+    align-items: center;   
+    gap: 1%; 
+
+    &__imagem{
+        width: 20%;
+        height: 20%;
+    }
+}
+
+.main{
+    flex: 1;
+    display: grid;         
+    justify-content: left;  
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    background-color: rgb(48, 28, 134);
+    border-radius: 0.5rem;
+
+    &__item{
+        flex: 1;
+        margin: 1%;
+        padding: 1%;
+        background-color: variaveis.$cor-padrao;
+        text-align: left;
+    }
+
+    &__item-ul{
+        list-style: decimal;
+        padding: 3vh;
+    }
+}
+
+.footer{
+    @include mixins.gradiant-padrao;
+    color: variaveis.$cor-padrao;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    padding: 1vh;
+}
