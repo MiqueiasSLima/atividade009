@@ -3,7 +3,7 @@
 
 .header{
     @include mixins.gradiant-padrao;
-    padding: 5vh;
+    padding: variaveis.$espacamento;
     text-align: left;
     display: flex;       
     align-items: center;   
@@ -20,7 +20,7 @@
     display: grid;         
     justify-content: left;  
     margin: 1.25rem auto;
-    padding: 1.25rem;
+    padding: variaveis.$tamanho-padding;
     background-color: rgb(48, 28, 134);
     border-radius: 0.5rem;
 
@@ -34,7 +34,20 @@
 
     &__item-ul{
         list-style: decimal;
-        padding: 3vh;
+        padding: variaveis.$tamanho-padding;
+    }
+
+    &__formulario{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    &__input{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box; 
     }
 }
 

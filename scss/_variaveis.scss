@@ -1,4 +1,8 @@
+@use "sass:math";
+
 $font-principal: 'Roboto', 'Sans Serif';
-$espacamento: 1.6rem;
+$espacamento: 4vh;
+$tamanho-fonte: 2vh;
+$tamanho-padding: calc($espacamento / 2);
 $cor-padrao: rgb(206, 232, 255);
 $cor-padrao-hover: rgb(22, 8, 8);
