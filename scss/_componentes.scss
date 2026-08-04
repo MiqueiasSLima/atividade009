@@ -22,28 +22,23 @@
 }
 
 .material-icons.header__burguer{
-    @include mixins.botao-padrao;
-    
+    font-size: 8vh;
+    color: variaveis.$cor-padrao;
+    position: absolute; 
+    top: 2vh;        
+    right: 2vh;     
+    cursor: pointer;
 }
 
 .header__burguer:hover{
     color: variaveis.$cor-padrao-hover;
 }
 
-.botao-forms{
-    background-color: #312c01ab;
-    color: variaveis.$cor-padrao;
-    font-style: bold;
-    font-size: larger;
-    padding: 1vw 2vw;
-    font-size: variaveis.$tamanho-fonte;
-    text-align: center;
-    margin: variaveis.$tamanho-padding;
-    padding: variaveis.$tamanho-padding;
-    padding-left: variaveis.$espacamento;
-    padding-right: variaveis.$espacamento;
+.formulario_botao{
+    @include mixins.botao-padrao;
 }
 
-.botao-forms:hover{
-    background-color: #02331cab;
+.formulario_botao:hover{
+    background-color: variaveis.$cor-padrao;
+    color: variaveis.$cor-padrao-hover;
 }

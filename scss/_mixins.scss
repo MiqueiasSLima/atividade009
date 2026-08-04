@@ -1,5 +1,6 @@
 @use 'variaveis';
 
+// Reset css padrozinado
 @mixin reset-css{
     margin: 0;
     padding: 0;
@@ -8,16 +9,19 @@
     line-height: variaveis.$espacamento;
 }
 
+// Degradê padrão 
 @mixin gradiant-padrao{
     background-image: linear-gradient(to right, rgba(14, 207, 182, 0.76) , rgba(190, 11, 71, 0.733));
 }
 
+// Botão padrão 
 @mixin botao-padrao{
-    font-size: 8vh;
+    background-color: #00778bab;
     color: variaveis.$cor-padrao;
-    position: absolute; 
-    top: 2vh;        
-    right: 2vh;     
-    cursor: pointer;
+    font-style: bold;
+    font-size: variaveis.$tamanho-fonte;
+    text-align: center;
+    margin: variaveis.$tamanho-padding;
+    padding: variaveis.$tamanho-padding;
 }
 
